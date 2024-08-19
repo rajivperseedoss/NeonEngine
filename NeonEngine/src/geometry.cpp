@@ -1,6 +1,6 @@
 #include "geometry.h"
 
-#include "glm/glm.hpp"
+#include "glm.hpp"
 
 bool ray_triangle_intersection(const glm::vec3& orig, const glm::vec3& dir, const glm::vec3& v0, const glm::vec3& v1, const glm::vec3& v2, float& t) {
     const float kEpsilon = 0.0000001;

@@ -13,7 +13,7 @@
 #include <imgui_impl_opengl3.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
+#include <glm.hpp>
 #include <mutex>
 #include <iostream>
 #include <cstring>

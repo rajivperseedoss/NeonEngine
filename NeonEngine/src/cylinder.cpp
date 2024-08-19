@@ -25,7 +25,7 @@
 #include "mesh.h"
 
 #include <glad/glad.h>
-#include <glm/glm.hpp>
+#include <glm.hpp>
 #include <iostream>
 #include <iomanip>
 #include <cmath>
