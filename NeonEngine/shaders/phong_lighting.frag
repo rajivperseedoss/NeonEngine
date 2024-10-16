@@ -74,12 +74,12 @@ vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir);
 
 void main() {
     if (is_transform3d == 0) {
-        IdColor = vec4(id_color_game_object/255.0, 1.0);
+        IdColor = vec4(id_color_game_object / 255.0f, 1.0);
         IdColorTransform3d = vec4(0.0);
     }
     else {
         IdColor = vec4(0.0);
-        IdColorTransform3d = vec4(id_color_game_object/255.0, 1.0);
+        IdColorTransform3d = vec4(id_color_game_object / 255.0f, 1.0);
     }
     
 	if (render_only_ambient == 1) {

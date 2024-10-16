@@ -41,7 +41,7 @@ public:
     void clean_imgui();
 
     int window_viewport_width, window_viewport_height;
-    int texture_viewport_width, texture_viewport_height;;
+    int texture_viewport_width, texture_viewport_height;
     int texture_viewport_reduce_width_px, texture_viewport_reduce_height_px;
     unsigned int rendered_texture;
     DisplayedRendering displayed_rendering;

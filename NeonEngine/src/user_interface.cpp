@@ -17,6 +17,7 @@
 #include <mutex>
 #include <iostream>
 #include <cstring>
+#include "string.h"
 
 UserInterface* UserInterface::instance = nullptr;
 std::mutex UserInterface::user_interface_mutex;
@@ -454,7 +455,7 @@ void UserInterface::show_game_object_ui(GameObject* game_object) {
             ImGui::TableSetColumnIndex(1);
             ImGui::PushItemWidth(-1);
             char buffer[100];
-            strcpy_s(buffer, game_object->name.c_str());
+            strcpy(buffer, game_object->name.c_str());
             ImGui::InputText("##GameObjectName", buffer, sizeof(buffer));
             if (ImGui::IsItemEdited()) {
                 rendering->game_objects.erase(game_object->name);

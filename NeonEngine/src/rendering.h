@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bloom.h"
+#include "cubemap.h"
 
 #include <mutex>
 #include <vector>

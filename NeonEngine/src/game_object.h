@@ -9,6 +9,7 @@
 #include <string>
 #include <random>
 #include <iostream>
+#include <algorithm>
 
 class Rendering;
 class Shader;

@@ -2,7 +2,10 @@
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <chrono>
+#include <ctime>
+#include <iomanip>
 
 class Logger {
 public:
@@ -20,11 +23,8 @@ public:
         auto now = std::chrono::system_clock::now();
         std::time_t now_c = std::chrono::system_clock::to_time_t(now);
 
-        std::tm timeinfo = {};
-        localtime_s(&timeinfo, &now_c);
-
-        log_file << std::put_time(&timeinfo, "%Y-%m-%d %H:%M:%S") << " " << message << std::endl;
-        log_string << std::put_time(&timeinfo, "%Y-%m-%d %H:%M:%S") << " " << message << std::endl;
+        log_file << std::put_time(std::localtime(&now_c), "%Y-%m-%d %H:%M:%S") << " " << message << std::endl;
+        log_string << std::put_time(std::localtime(&now_c), "%Y-%m-%d %H:%M:%S") << " " << message << std::endl;
     }
 
     std::string get_data() {

@@ -84,5 +84,25 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/NeonEngine/fonts ${CMAKE_BINARY_DIR}/${PROJECT_NAME}/NeonEngine/fonts
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/NeonEngine/fonts ${CMAKE_BINARY_DIR}/${PROJECT_NAME}/fonts
+)
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/NeonEngine/materials ${CMAKE_BINARY_DIR}/${PROJECT_NAME}/materials
+)
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/NeonEngine/models ${CMAKE_BINARY_DIR}/${PROJECT_NAME}/models
+)
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/NeonEngine/HDRIs ${CMAKE_BINARY_DIR}/${PROJECT_NAME}/HDRIs
+)
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/NeonEngine/shaders ${CMAKE_BINARY_DIR}/${PROJECT_NAME}/shaders
     DEPENDS ${PROJECT_SHADERS})
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/NeonEngine/skyboxes ${CMAKE_BINARY_DIR}/${PROJECT_NAME}/skyboxes
+)
