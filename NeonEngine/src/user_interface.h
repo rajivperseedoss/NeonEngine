@@ -4,6 +4,7 @@
 
 #include <imgui.h>
 #include <mutex>
+#include <string>
 
 class NeonEngine;
 class Input;

@@ -15,7 +15,7 @@ git reset --hard b35641f4a3c62aa86a0b3c983d163bc0fe36026d
 cd ..
 
 cd imgui
-git reset --hard 1d88609043fd7a25df7f5f4acd7aa3cc4aaf8033
+git reset --hard 7b6314f47d2aaa3758cfeeca66af34f5c9309ca4
 cd ..
 
 cd stb

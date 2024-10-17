@@ -6,7 +6,7 @@
 #include <stb_image.h>
 #include <iostream>
 #include <glad/glad.h>
-#include <glm.hpp>
+#include <glm/glm.hpp>
 
 unsigned int compile_shaders(const char* vertexShaderSource, const char* fragmentShaderSource) {
     // build and compile our shader program

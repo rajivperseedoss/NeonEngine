@@ -4,8 +4,8 @@
 #include "shader.h"
 
 #include <glad/glad.h> // holds all OpenGL type declarations
-#include <glm.hpp>
-#include <gtc/matrix_transform.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 #include <string>
 #include <vector>
 #include <set>
