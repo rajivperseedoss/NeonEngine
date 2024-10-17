@@ -60,7 +60,7 @@ include_directories(
     lib/imgui/backends/
 )
 
-add_definitions(-DGLM_ENABLE_EXPERIMENTAL)
+#add_definitions(-DGLM_ENABLE_EXPERIMENTAL)
 
 target_link_libraries(${PROJECT_NAME}
     assimp
